@@ -73,4 +73,119 @@ $ git commit -m "This is sample python file with a function"
  1 file changed, 3 insertions(+)
 
 Kamrul Islam@DESKTOP-5M2VNGU MINGW64 /f/Git Demo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        about_me.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Kamrul Islam@DESKTOP-5M2VNGU MINGW64 /f/Git Demo (master)
+$ git add .
+
+Kamrul Islam@DESKTOP-5M2VNGU MINGW64 /f/Git Demo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about_me.py
+
+
+Kamrul Islam@DESKTOP-5M2VNGU MINGW64 /f/Git Demo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about_me.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Document.txt
+
+
+Kamrul Islam@DESKTOP-5M2VNGU MINGW64 /f/Git Demo (master)
+$ git add .
+
+Kamrul Islam@DESKTOP-5M2VNGU MINGW64 /f/Git Demo (master)
+$ git commit -m "Added two import file about_me.py and Document.txt"
+[master e13534d] Added two import file about_me.py and Document.txt
+ 2 files changed, 80 insertions(+)
+ create mode 100644 Document.txt
+ create mode 100644 about_me.py
+
+Kamrul Islam@DESKTOP-5M2VNGU MINGW64 /f/Git Demo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Kamrul Islam@DESKTOP-5M2VNGU MINGW64 /f/Git Demo (master)
+$ git remote add origin https://github.com/kamrulislam01sky/Python-Master-Code.git
+
+Kamrul Islam@DESKTOP-5M2VNGU MINGW64 /f/Git Demo (master)
+$ git remote
+origin
+
+Kamrul Islam@DESKTOP-5M2VNGU MINGW64 /f/Git Demo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Kamrul Islam@DESKTOP-5M2VNGU MINGW64 /f/Git Demo (master)
+$ git push -u origin master
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/kamrulislam01sky/Python-Master-Code.git/'
+
+Kamrul Islam@DESKTOP-5M2VNGU MINGW64 /f/Git Demo (master)
+$ git config -list
+error: did you mean `--list` (with two dashes)?
+
+Kamrul Islam@DESKTOP-5M2VNGU MINGW64 /f/Git Demo (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+core.editor=notepad
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Kamrul Islam
+user.email=iub.kamrulislam@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/kamrulislam01sky/Python-Master-Code.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+Kamrul Islam@DESKTOP-5M2VNGU MINGW64 /f/Git Demo (master)
+$ git push -u origin master
+fatal: Response status code does not indicate success: 401 (Unauthorized).
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/kamrulislam01sky/Python-Master-Code.git/'
+
+Kamrul Islam@DESKTOP-5M2VNGU MINGW64 /f/Git Demo (master)
+$ git push -u origin master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (10/10), 1.46 KiB | 498.00 KiB/s, done.
+Total 10 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/kamrulislam01sky/Python-Master-Code.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Kamrul Islam@DESKTOP-5M2VNGU MINGW64 /f/Git Demo (master)
 $
